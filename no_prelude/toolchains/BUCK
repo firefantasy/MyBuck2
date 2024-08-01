@@ -1,0 +1,9 @@
+load("//:rust_toolchain.bzl", "rust_local_toolchain")
+
+
+rust_local_toolchain(
+    name = "rust",
+    command = "rustc",
+    visibility = ["PUBLIC"],
+)
+
